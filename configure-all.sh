@@ -13,7 +13,10 @@ npm install -g bower
 #Configuration of file bower.json
 bower init
 
-#Install of packages bower
+#Install main of packages bower
 bower install jquery
 bower install bootstrap
 bower install angular
+
+#Start all task
+grunt w
