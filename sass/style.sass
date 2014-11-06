@@ -1,0 +1,170 @@
+// Starting file of style as CSS
+
+// ------------------------------------------ //
+//	Projeto: Certificado Front End Carioca 
+//  Versão: v0.0.1 - boilerplate
+//	Autor: Pedro Polisenso & André Vitor
+//  Evento: Front End Carioca - 2014
+// ------------------------------------------ //
+
+// Variáveis
+$WidthDefault: 100%
+$ColorDefault: rgba(33,57,71,0.9)
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+
+html,
+body
+	height: $WidthDefault
+	font-family: helvetica, arial
+	overflow-y: hidden
+
+h1,
+h2,
+h3,
+h4
+	margin: 0
+
+.clear
+	clear: both
+
+.wrap-content
+	width: $WidthDefault
+	height: $WidthDefault
+	background: url(../image/bg-header.jpg)
+	no-repeat center top fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	overflow-x:hidden
+	background-position: center center
+	padding-top: 50px
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: $WidthDefault
+		height: $WidthDefault
+		background: rgba(33,57,71,0.9)
+		z-index: 0
+
+.main
+	position: relative
+	z-index: 9
+	h1
+		display: block
+		width: 200px
+		margin: auto
+		padding-bottom: 30px
+	img
+		width: $WidthDefault
+		border: 2px solid #194a6b
+		border-radius: $WidthDefault/2
+	h2,
+	h3
+		text-align: center
+		color: #fff
+	h2
+		font-size: 45px
+		span
+			color: #f2c51a
+			font-size: 45px
+			.edicao
+			font-size: 25px
+	h3
+		padding-top: 20px
+
+	form
+		width: $WidthDefault/2
+		min-width: 360px
+		margin: auto
+		padding-top: 10px
+
+		input
+			width: $WidthDefault
+			text-transform: lowercase
+			color: #194a6b
+			height: 35px
+			border-radius: 5px
+			border: none
+			text-align: center
+			font-size: 15px
+	button
+		display: block
+		width: $WidthDefault/2
+		min-width: 360px
+		margin: auto
+		margin-top: 10px
+		background: #f2c51a
+		color: #194a6b
+		font-family: helvetica, arial
+		text-transform: uppercase
+		font-weight: 700
+		border: 3px solid #f2c51a
+		padding: 8px 10px
+		border-radius: 5px
+		transition: all .6s
+		-webkit-transition: all .6s
+		-moz-transition: all .6s
+		-o-transition: all .6s
+		&:hover
+			background: transparent
+			color: #f2c51a
+			cursor: pointer
+
+#Modal			
+	background-image: url(../../assets/image/bg.png)
+	//overflow: hidden
+	width: $WidthDefault
+	height: $WidthDefault
+	position: absolute
+	z-index: 99
+	display: none
+	#Holdcertificado
+		width: 805px
+		margin: auto
+		border-radius: 5px
+		background-color: #fff
+		margin-top: 30px
+		padding: 10px 20px 20px 10px
+		#Holdbody
+			border: 3px solid #323130
+			border-radius: 3px
+			width: $WidthDefault
+			height: 96%
+			margin: auto
+			padding-top: 20px
+
+#logotipo
+	width: 250px
+	height: 83px
+	margin: auto
+
+#resposta 
+	width: 650px
+	margin: 10px auto 10px auto
+	padding: 5px
+	font-size: 23px
+	p
+		margin-top: 15px 
+	#Name,
+	#rg
+		color: $ColorDefault
+		font-size: 30px
+		text-transform: uppercase
+		font-weight: 700
+
+#gerar
+	background-color: $ColorDefault
+	color: #fff
+	font-size: 16px
+	padding: 5px 13px
+	cursor: pointer
+	margin: 15px 0 0 0
+	float: right
