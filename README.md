@@ -4,14 +4,15 @@
 
 ## Como contribuir?
 
-1 - Dê um Fork no projeto
-2 - Clone para seu desktop
-3 - Use o branch 'Desenvolvimento' para contribuições
+1 - Dê um Fork no projeto<br>
+2 - Clone para seu desktop<br>
+3 - Use o branch 'desenvolvimento' para contribuições<br>
 4 - Dê o Pull Request
 
 ## Formas de Uso
 
 > Se você está em um terminal do sistema Linux ou Mac OS use o comando para executar os arquivos .sh. Na opção de número 1 você vai apenas instalar a configuração necessária para usar somente grunt, só precisa disso. Na opção número 2, além de usar gruntjs, vai trabalhar com gerenciamente de pacotes com bower.
+
 
 1 - Para Linux e Mac OS - Não vou usar bower como gerenciador, somente gruntjs, use:
  - ./configure-modules.sh
