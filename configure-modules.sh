@@ -8,3 +8,6 @@
 npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-sass --save-dev
 npm install grunt-contrib-watch --save-dev
+
+#Start all task
+grunt w
