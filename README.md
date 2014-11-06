@@ -4,9 +4,9 @@
 
 ## Como contribuir?
 
-1 - Dê um Fork no projeto
-2 - Clone para seu desktop
-3 - Use o branch 'Desenvolvimento' para contribuições
+1 - Dê um Fork no projeto<br>
+2 - Clone para seu desktop<br>
+3 - Use o branch 'Desenvolvimento' para contribuições<br>
 4 - Dê o Pull Request
 
 ## Formas de Uso
