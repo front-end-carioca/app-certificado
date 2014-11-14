@@ -1,7 +1,5 @@
 // Starting file of script as JS
 
-// Carregando minhas funções
-
 // ------------------------------------------ //
 //	Projeto: Certificado Front End Carioca 
 //  Versão: v0.0.1 - boilerplate
@@ -9,6 +7,7 @@
 //  Evento: Front End Carioca - 2014
 // ------------------------------------------ //
 
+// Carregando minhas funções
 $(document).ready(function(){
 	AppCheckin();
 	ObterCertificado();
@@ -29,13 +28,17 @@ function AppCheckin(){
 		    beforeSend: function(){
 		    	//$('#load').html('<center><img src="assets/image/icon-load.gif"></center>');
 		    },
-		    
 		    success: function(resp){
 		    	var result = resp.split('|');
-	    		$('#Name').html(result[0]);
-	    		$('#rg').html(result[1]);
-		    }
 
+		    	if (result == 'error'){
+		    		$('#Modal').css('display', 'none');
+		    		alert('Desculpe, seu email nao esta cadastrado =(');
+		    	}else {
+		    		$('#Name').html(result[0]);
+		    		$('#rg').html(result[1]);
+	    		}
+		    }
 		});
 	});				  
 }
