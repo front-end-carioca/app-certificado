@@ -20,6 +20,10 @@ module.exports = function( grunt ) {
    		}
    	}, // sass
 
+    jshint: {
+      all: ['Gruntfile.js', 'script/**/*.js']
+    },
+
    	watch : {
         dist : {
           files : [
