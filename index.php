@@ -41,7 +41,6 @@
                     <p>
                         Seu RG é: <span id="rg"></span>. Para emitir seu certificado, clique no botão abaixo!
                     </p>
-
                     <form method="post" action="conection/certificado.php">
                         <input type="submit" name="gerar" id="gerar" value="Obter Certificado">
                     </form>
@@ -62,7 +61,7 @@
                     <h3>Digite seu email para obter o certificado:</h3>
                 </div>
                 <form id="form-checkin" method="post" class="animated fadeInUp">
-                    <input id="email" class="btn btn-lg" name="email" type="email" placeholder="Digite seu Email">
+                    <input id="email" class="btn btn-lg" name="email" type="email" placeholder="Digite seu Email" required="required">
                     <div id="alerts"></div>
                 </form>
                 <button id="checkin" class="animated fadeInUp" value="Check-In">obter certificado</button>
